@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Year Countdown",
+    "description": "Shows time left until the end of the year.",
+    "version": "1.0",
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
+
+    },
+    "permissions": ["storage"],
+    "icons": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    }
+  }
