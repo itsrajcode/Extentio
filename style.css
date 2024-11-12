@@ -22,10 +22,17 @@ body {
   grid-template-rows: repeat(6, 1fr);
   z-index: 1; 
   opacity: 0.5; 
+  transition: opacity 0.3s ease-in-out;
 }
 
 .grid-box {
   border: 1px solid black;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.grid-box:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .grid-box:nth-child(1) { background-color: rgb(165, 105, 189); }  /* Light Purple */
@@ -103,9 +110,6 @@ body {
 .grid-box:nth-child(71) { background-color: rgb(50, 50, 50); }     /* Charcoal */
 .grid-box:nth-child(72) { background-color: rgb(0, 0, 0); }        /* Black */
 
-
-
-
 .container {
   height: 100vh;
   width: 100%;
@@ -123,15 +127,21 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 10; 
-  background: rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)); 
+  transition: opacity 0.3s ease-in-out;
 }
+
+
 
 .text-content {
   color: white;
   text-align: center;
   z-index: 20;
   font: bold 3rem Arial, sans-serif;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+
 
 .countdown {
   position: relative;
@@ -139,4 +149,6 @@ body {
   font-weight: bold;
   color: white;
   z-index: 20;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
