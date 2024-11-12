@@ -27,11 +27,11 @@ body {
 
 .grid-box {
   border: 1px solid black;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .grid-box:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
   z-index: 1;
 }
 
